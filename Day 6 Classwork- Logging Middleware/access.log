@@ -1,0 +1,10 @@
+HTTP Method: GET Requested URL: /, Time: Mon Feb 26 2024 20:30:20 GMT+0530 (India Standard Time), IP: ::1
+Time taken: 4ms
+HTTP Method: GET Requested URL: /product-list, Time: Mon Feb 26 2024 20:30:27 GMT+0530 (India Standard Time), IP: ::1
+Time taken: 5ms
+HTTP Method: GET Requested URL: /product-list/1, Time: Mon Feb 26 2024 20:30:29 GMT+0530 (India Standard Time), IP: ::1
+Time taken: 4ms
+HTTP Method: GET Requested URL: /product-list/10, Time: Mon Feb 26 2024 20:30:30 GMT+0530 (India Standard Time), IP: ::1
+Time taken: 2ms
+HTTP Method: GET Requested URL: /, Time: Mon Feb 26 2024 20:30:33 GMT+0530 (India Standard Time), IP: ::1
+Time taken: 4ms
