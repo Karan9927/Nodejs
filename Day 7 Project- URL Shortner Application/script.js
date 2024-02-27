@@ -25,7 +25,7 @@ app.post("/shorten", (req, res) => {
   const shortUrl = generateShortUrl();
   urlDatabase[shortUrl] = longUrl;
 
-  res.send(`Shortened URL: http://localhost:${5000}/${shortUrl}`);
+  res.send(`Shortened URL: https://nodejsurlshortner.vercel.app/${shortUrl}`);
 });
 
 app.get("/:shortUrl", (req, res) => {
@@ -39,7 +39,7 @@ app.get("/:shortUrl", (req, res) => {
   }
 });
 
-app.listen(5000, () => {
+app.listen("https://nodejsurlshortner.vercel.app/", () => {
   console.log(`Server is running on http://localhost:5000`);
 });
 
