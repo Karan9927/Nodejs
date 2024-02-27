@@ -25,7 +25,7 @@ app.post("/shorten", (req, res) => {
   const shortUrl = generateShortUrl();
   urlDatabase[shortUrl] = longUrl;
 
-  res.send(`Shortened URL: https://nodejsurlshortner.vercel.app/${shortUrl}`);
+  res.send(`Shortened URL: https://localhost:5000/${shortUrl}`);
 });
 
 app.get("/:shortUrl", (req, res) => {
