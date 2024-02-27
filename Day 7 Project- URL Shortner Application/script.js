@@ -26,7 +26,7 @@ app.post("/shorten", (req, res) => {
   const shortUrl = generateShortUrl();
   urlDatabase[shortUrl] = longUrl;
 
-  res.send(`Shortened URL: https://localhost:${port}/${shortUrl}`);
+  res.send(`Shortened URL: https://urlshortnerrr.onrender.com/${shortUrl}`);
 });
 
 app.get("/:shortUrl", (req, res) => {
