@@ -6,6 +6,7 @@ import path from "path";
 const app = express();
 
 const __dirname = path.resolve();
+const port = process.env.PORT || 5000;
 
 const urlDatabase = {};
 
@@ -25,7 +26,7 @@ app.post("/shorten", (req, res) => {
   const shortUrl = generateShortUrl();
   urlDatabase[shortUrl] = longUrl;
 
-  res.send(`Shortened URL: https://localhost:5000/${shortUrl}`);
+  res.send(`Shortened URL: https://localhost:${port}/${shortUrl}`);
 });
 
 app.get("/:shortUrl", (req, res) => {
@@ -39,8 +40,8 @@ app.get("/:shortUrl", (req, res) => {
   }
 });
 
-app.listen("https://nodejsurlshortner.vercel.app/", () => {
-  console.log(`Server is running on http://localhost:5000`);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
 
 function generateShortUrl() {
